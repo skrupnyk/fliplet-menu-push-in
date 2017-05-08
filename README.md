@@ -1,4 +1,4 @@
-# Fliplet Push In Menu
+# Fliplet Push In Menu (Right)
 
 The toggle of your menu must be declared using `data-fl-toggle-menu="jquerySelector"` attribute. The jQuery selector will get its `"active"` class toggled on and off when the toggle is clicked/tapped.
 

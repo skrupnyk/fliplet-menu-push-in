@@ -1,3 +1,7 @@
+if (Modernizr.backdropfilter) {
+  $('.body').addClass('backdropfilter');
+}
+
 $('[data-fl-toggle-menu]').on('click', function() {
   $('body').addClass('has-push-menu');
   $('html').addClass('has-push-menu');

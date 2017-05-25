@@ -1,5 +1,5 @@
 {
-  "name": "Push in from right side",
+  "name": "Push in",
   "package": "com.fliplet.menu.push-in",
   "version": "1.0.0",
   "icon": "img/icon.png",
@@ -16,6 +16,16 @@
     "assets": [
       "css/menu.css",
       "js/menu.js"
+    ]
+  },
+  "interface": {
+    "dependencies": [
+      "fliplet-core",
+      "fliplet-studio-ui"
+    ],
+    "assets": [
+      "js/settings.js",
+      "css/settings.css"
     ]
   },
   "settings": {

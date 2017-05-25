@@ -2,6 +2,12 @@ if (Modernizr.backdropfilter) {
   $('.body').addClass('backdropfilter');
 }
 
+if ($('.fl-viewport-header').hasClass('fl-viewport-header-left')) {
+  $('body').addClass('has-menu-left');
+} else {
+  $('body').addClass('has-menu-right');
+}
+
 $('[data-fl-toggle-menu]').on('click', function() {
   $('body').addClass('has-push-menu');
   $('html').addClass('has-push-menu');

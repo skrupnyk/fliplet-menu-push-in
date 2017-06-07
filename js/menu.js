@@ -24,3 +24,9 @@ $('.fl-menu .fl-close-menu').on('click', function() {
   $('body').removeClass('has-push-menu');
   $('html').removeClass('has-push-menu');
 });
+
+$('[open-about-overlay]').on('click', function() {
+  Fliplet.Navigate.to({
+    action: 'about-overlay'
+  });
+});

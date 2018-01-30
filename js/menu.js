@@ -42,7 +42,7 @@ $('.fl-menu-swipe-handler').hammer().bind('swiperight', function() {
 });
 
 if (data.hide) {
-  $(window).scroll(function(event){
+  $(window).scroll(function(){
     var st = $(this).scrollTop();
     if (st > lastScrollTop){
       // downscroll code

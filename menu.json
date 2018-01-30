@@ -11,10 +11,12 @@
     "dependencies": [
       "bootstrap",
       "font-awesome",
-      "fliplet-core"
+      "fliplet-core",
+      "hammer.js"
     ],
     "assets": [
       "css/menu.css",
+      "js/jquery.hammer.js",
       "js/menu.js"
     ]
   },
@@ -29,6 +31,7 @@
     ]
   },
   "settings": {
-    "position": "top"
+    "position": "top",
+    "gifIcon": "img/icon.gif"
   }
 }

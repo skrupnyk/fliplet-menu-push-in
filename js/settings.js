@@ -7,17 +7,33 @@ if (!data.location) {
   $('#menu-location').val('menuLeft').trigger('change');
 }
 
+if (!data.hide) {
+  $('input[name="hide-menu"][value="no"]').prop('checked', true);
+} else {
+  $('input[name="hide-menu"][value="yes"]').prop('checked', true);
+}
+
 Fliplet.Widget.onSaveRequest(function() {
   var location;
+  var hide;
   var menuLocation = $('#menu-location').val();
+  var hideMenu = $('input[name="hide-menu"]:checked').val();
+  
   if (menuLocation === 'menuLeft') {
     location = true;
   } else {
     location = false;
   }
 
+  if (hideMenu === 'yes') {
+    hide = true;
+  } else {
+    hide = false;
+  }
+
   Fliplet.Widget.save({
-    location: location
+    location: location,
+    hide: hide
   }).then(function() {
     Fliplet.Widget.complete();
   });

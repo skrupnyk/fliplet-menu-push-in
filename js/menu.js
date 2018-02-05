@@ -37,7 +37,7 @@ $('[open-about-overlay]').on('click', function() {
   });
 });
 
-$('.fl-menu-swipe-handler').hammer().bind('swiperight', function() {
+$('body').hammer().bind('swiperight', function() {
   Fliplet.Navigate.back();
 });
 

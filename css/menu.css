@@ -282,24 +282,10 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   text-align: right;
   max-height: 100%;
   line-height: 21px;
-  background: #ececec;
+  background: #ffffff;
   font-size: 9px;
   font-family: Verdana;
-}
-
-.fl-app-menu-toolbar:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 14px;
-  position: absolute;
-  top: -14px;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(236, 236, 236, 1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(236, 236, 236, 1)));
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(236, 236, 236, 1) 100%);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(236, 236, 236, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(236, 236, 236, 1) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(236, 236, 236, 1) 100%);
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .fl-app-menu-toolbar .copyright {
@@ -380,7 +366,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-app-menu .fl-list-default ul > li .buttonControl {
   padding: 10px 44px 10px 10px;
   display: block;
-  line-height: 24px;
 }
 
 .fl-close-menu {

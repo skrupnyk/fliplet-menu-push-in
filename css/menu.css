@@ -285,7 +285,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   background: #ffffff;
   font-size: 9px;
   font-family: Verdana;
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .fl-app-menu-toolbar .copyright {

@@ -124,12 +124,15 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-viewport-header .nav-left {
   left: 0;
   line-height: 44px;
+  font-size: 2em;
 }
 
 .fl-viewport-header .nav-right {
   right: 0;
   width: 44px;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fl-viewport-header-left .nav-right {
@@ -378,6 +381,9 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   position: absolute;
   cursor: pointer;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fl-close-menu .fa {
@@ -440,4 +446,21 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 
 html.no-history .fl-viewport-header .nav-left {
   display: none;
+}
+
+html.no-history.mode-interact .fl-viewport-header .nav-left {
+  display: block;
+}
+
+.hamburger {
+  padding: 0;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  display: flex;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #333333;
 }

@@ -35,10 +35,6 @@ html.no-android.has-push-menu {
   padding-top: 44px;
 }
 
-.fl-with-top-menu.fl-top-menu-hidden {
-  padding-top: 0;
-}
-
 .fl-viewport-header {
   position: fixed;
   top: 0;

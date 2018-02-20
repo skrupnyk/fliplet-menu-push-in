@@ -120,7 +120,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-viewport-header .nav-left {
   left: 0;
   line-height: 44px;
-  font-size: 2em;
 }
 
 .fl-viewport-header .nav-right {
@@ -147,6 +146,8 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 
 .fl-viewport-header .nav-left .fa {
   width: 44px;
+  font-size: 2em;
+  line-height: 44px;
 }
 
 .fl-viewport-header .nav-left .btn-label {
@@ -176,6 +177,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
     width: auto;
     position: relative;
     left: -15px;
+    top: -4px;
   }
 
   .fl-viewport-header-left .nav-left + .nav-right + .nav-title,

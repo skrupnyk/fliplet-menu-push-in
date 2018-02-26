@@ -38,8 +38,6 @@ html.no-android.has-push-menu {
 .fl-viewport-header {
   position: fixed;
   top: 0;
-  top: constant(safe-area-inset-top);
-  top: env(safe-area-inset-top);
   left: 0;
   right: 0;
   height: 44px;
@@ -60,6 +58,21 @@ html.no-android.has-push-menu {
   transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
+}
+
+.fl-menu-swipe-handler {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  pointer-events: none;
+  background: transparent;
+  z-index: 10;
+}
+
+.fl-menu-swipe-handler.active {
+  pointer-events: all;
 }
 
 body.has-menu-right.has-push-menu .fl-viewport-header {
@@ -177,8 +190,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-menu {
   position: fixed;
   top: 0;
-  top: constant(safe-area-inset-top);
-  top: cenv(safe-area-inset-top);
   right: 0;
   bottom: 0;
   left: 0;
@@ -267,8 +278,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-app-menu-toolbar {
   position: absolute;
   bottom: 0;
-  bottom: constant(safe-area-inset-bottom);
-  bottom: env(safe-area-inset-bottom);
   left: 0;
   right: 0;
   text-align: right;
@@ -301,8 +310,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 
 .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
   bottom: 21px;
-  bottom: calc(constant(safe-area-inset-bottom) + 21px);
-  bottom: calc(env(safe-area-inset-bottom) + 21px);
 }
 
 .fl-menu.fl-app-menu .fl-menu-header ~ .fl-menu-body {

@@ -177,8 +177,8 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-menu {
   position: fixed;
   top: 0;
-  top: calc(constant(safe-area-inset-top) + 44px);
-  top: calc(env(safe-area-inset-top) + 44px);
+  top: constant(safe-area-inset-top);
+  top: env(safe-area-inset-top);
   right: 0;
   bottom: 0;
   left: 0;

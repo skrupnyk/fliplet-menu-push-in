@@ -267,8 +267,8 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-app-menu-toolbar {
   position: absolute;
   bottom: 0;
-  bottom: constant(safe-area-inset-bottom);
-  bottom: env(safe-area-inset-bottom);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
   left: 0;
   right: 0;
   text-align: right;

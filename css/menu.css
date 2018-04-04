@@ -279,6 +279,10 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   font-family: Verdana;
 }
 
+[data-simulator="iphone-x"] .fl-app-menu-toolbar {
+    padding-bottom: 34px;
+}
+
 .fl-app-menu-toolbar .copyright {
   padding: 0 15px;
 }

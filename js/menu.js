@@ -55,8 +55,4 @@ function init() {
       action: 'about-overlay'
     });
   });
-
-  $('body').hammer().bind('swiperight', function() {
-    Fliplet.Navigate.back();
-  });
 }

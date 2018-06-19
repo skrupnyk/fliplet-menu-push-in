@@ -9,6 +9,10 @@ function init() {
   var data = Fliplet.Widget.getData(menuInstanceId) || {};
   var lastScrollTop = 0;
 
+  if ($('li.with-icon').length) {
+    $('.main-menu').addClass('with-icons');
+  }
+
   if (Modernizr.backdropfilter) {
     $('.body').addClass('backdropfilter');
   }

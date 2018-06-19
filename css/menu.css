@@ -333,16 +333,16 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 .fl-list-default ul > li {
   list-style: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  padding: 10px 10px 10px 0;
+  padding: 10px 10px 10px 10px;
   position: relative;
 }
 
 .fl-list-default ul > li.linked {
   cursor: pointer;
-  padding: 0;
+  padding-right: 44px;
 }
 
-.fl-list-default ul > li .fa {
+.fl-list-default ul > li .linked-icon {
   display: none;
   position: absolute;
   width: 44px;
@@ -356,12 +356,30 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   color: #333;
 }
 
-.fl-list-default ul > li.linked .fa {
+.fl-list-default ul > li.linked .linked-icon {
   display: block;
 }
 
+.fl-list-default ul > li.with-icon,
+.fl-list-default ul.with-icons > li {
+  padding-left: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.fl-list-default ul > li .fl-menu-icon {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
 .fl-app-menu .fl-list-default ul > li .buttonControl {
-  padding: 10px 44px 10px 10px;
   display: block;
 }
 

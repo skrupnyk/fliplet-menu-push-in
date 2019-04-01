@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<div class="fl-viewport-header {{#if location}}fl-viewport-header-left{{/if}}">
+<div class="fl-viewport-header fl-menu-push {{#if location}}fl-viewport-header-left{{/if}} ">
   {{#if location}} {{#if canGoBack}}
   <span class="nav-left fl-menu-back" data-fl-navigate-back>
         <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
@@ -35,7 +35,7 @@
 <!-- END OF HEADER -->
 
 <!-- MENU OVERLAY -->
-<div class="fl-menu fl-app-menu {{#if location}}fl-menu-push-in-left{{else}}fl-menu-push-in{{/if}}">
+<div class="fl-menu fl-app-menu fl-menu-push {{#if location}}fl-menu-push-in-left{{else}}fl-menu-push-in{{/if}}">
   <div class="fl-menu-overlay"></div>
   <div class="fl-menu-panel">
     <div class="fl-menu-header">

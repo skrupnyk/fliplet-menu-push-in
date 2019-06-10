@@ -35,7 +35,7 @@ html.no-android.has-push-menu {
   padding-top: 44px;
 }
 
-[data-fl-widget-instance][data-widget-package="com.fliplet.menu.push-in"] {
+[data-fl-widget-instance][data-type="menu"] {
   position: fixed !important;
   top: 0;
   top: constant(safe-area-inset-top);

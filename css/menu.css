@@ -49,8 +49,6 @@ html.no-android.has-push-menu {
   height: 44px;
   margin: 0 auto;
   line-height: 43px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 0 #fff;
   border-bottom: 1px solid rgba(127, 127, 127, 0.1);
@@ -63,6 +61,11 @@ html.no-android.has-push-menu {
   transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
+}
+
+.no-android .fl-viewport-header {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 body.has-menu-right.has-push-menu .fl-viewport-header {

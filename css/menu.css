@@ -26,7 +26,6 @@ body.has-menu-left.has-push-menu {
 html.no-android body.has-push-menu,
 html.no-android.has-push-menu {
   -webkit-overflow-scrolling: auto;
-  overflow-y: hidden;
 }
 
 .fl-with-top-menu {

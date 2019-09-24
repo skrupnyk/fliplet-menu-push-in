@@ -23,12 +23,6 @@ body.has-menu-left.has-push-menu {
   overflow: hidden;
 }
 
-html.no-android body.has-push-menu,
-html.no-android.has-push-menu {
-  -webkit-overflow-scrolling: auto;
-  overflow: visible;
-}
-
 .fl-with-top-menu {
   -webkit-transition: padding 0.2s;
   transition: padding 0.2s;

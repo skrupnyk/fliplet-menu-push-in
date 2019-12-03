@@ -35,7 +35,7 @@ html.android .fl-with-top-menu main.fl-page-content-wrapper {
   min-height: calc(100vh - 44px);
 }
 
-html.web[data-has-notch].supports-container .fl-with-top-menu {
+[data-has-notch].supports-container .fl-with-top-menu {
   padding-bottom: 0;
 }
 

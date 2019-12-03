@@ -29,6 +29,16 @@ body.has-menu-left.has-push-menu {
   padding-top: 44px;
 }
 
+html.web .fl-with-top-menu main.fl-page-content-wrapper,
+html.android .fl-with-top-menu main.fl-page-content-wrapper {
+  /* Remove the height of the menu */
+  min-height: calc(100vh - 44px);
+}
+
+[data-has-notch].supports-container .fl-with-top-menu {
+  padding-bottom: 0;
+}
+
 [data-fl-widget-instance][data-type="menu"] {
   position: fixed !important;
   top: 0;

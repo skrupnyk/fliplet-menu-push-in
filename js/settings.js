@@ -18,7 +18,7 @@ Fliplet.Widget.onSaveRequest(function() {
   var hide;
   var menuLocation = $('#menu-location').val();
   var hideMenu = $('input[name="hide-menu"]:checked').val();
-  
+
   if (menuLocation === 'menuLeft') {
     location = true;
   } else {
@@ -36,9 +36,13 @@ Fliplet.Widget.onSaveRequest(function() {
     hide: hide
   }).then(function() {
     Fliplet.Widget.complete();
+    Fliplet.Studio.emit('reload-page-preview');
   });
 });
 
+Fliplet.Widget.toggleCancelButton(false);
+
 Fliplet.Widget.onCancelRequest(function() {
   Fliplet.Widget.complete();
+  Fliplet.Studio.emit('reload-page-preview');
 });

@@ -5,7 +5,7 @@
         <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
   </span>
   {{/if}} {{#if pages}}
-  <span class="nav-right" data-fl-toggle-menu=".fl-menu">
+  <span class="nav-right" data-fl-toggle-menu=".fl-menu" tabindex="1">
         <div class="hamburger hamburger--slider">
           <span class="hamburger-box">
             <span class="hamburger-inner">
@@ -27,7 +27,7 @@
       <span>{{title}}</span>
   </span>
   {{#if pages}}
-  <span class="nav-right" data-fl-toggle-menu=".fl-menu">
+  <span class="nav-right" data-fl-toggle-menu=".fl-menu" tabindex="1">
         <div class="hamburger hamburger--slider">
           <span class="hamburger-box">
             <span class="hamburger-inner">
@@ -45,7 +45,7 @@
   <div class="fl-menu-overlay"></div>
   <div class="fl-menu-panel">
     <div class="fl-menu-header">
-      <div class="fl-close-menu">
+      <div class="fl-close-menu" tabindex="1">
         <div class="hamburger hamburger--slider is-active">
           <span class="hamburger-box">
             <span class="hamburger-inner">
@@ -68,7 +68,7 @@
       <div class="fl-list-default">
         <ul class="main-menu">
           {{#each pages as |page pageIndex|}}
-          <li class="linked {{#if page.icon}}with-icon{{/if}}" data-fl-navigate='{{{page.action}}}' data-page-id="{{page.pageId}}">
+          <li class="linked {{#if page.icon}}with-icon{{/if}}" data-fl-navigate='{{{page.action}}}' data-page-id="{{page.pageId}}" tabindex="1">
             {{#if page.icon}}
             <div class="fl-menu-icon">
               <i class="{{page.icon}} fa-fw"></i>

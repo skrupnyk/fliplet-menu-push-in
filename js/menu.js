@@ -58,26 +58,43 @@ function init() {
     $('body').addClass('has-menu-right');
   }
 
-  $('[data-fl-toggle-menu]').on('click', function() {
-    $('body').addClass('has-push-menu');
-    $('html').addClass('has-push-menu');
-  });
-
   $('.fl-menu-overlay').click(function() {
     $(this).closest('.fl-menu').removeClass('active');
     $('body').removeClass('has-push-menu');
     $('html').removeClass('has-push-menu');
   });
 
-  $('.fl-menu .fl-close-menu').on('click', function() {
+  $('.fl-menu .fl-close-menu').on('click keydown', function() {
+    if (event.type !== 'click' && event.which !== 32 && event.which !== 13) {
+      return;
+    }
+
     $(this).parents('.fl-menu').removeClass('active');
     $('body').removeClass('has-push-menu');
     $('html').removeClass('has-push-menu');
+
+    if (event.type === 'keydown') {
+      $('.fl-viewport-header .hamburger').toggleClass('is-active');
+    }
   });
 
   $('[open-about-overlay]').on('click', function() {
     Fliplet.Navigate.to({
       action: 'about-overlay'
     });
+  });
+
+  $('[data-fl-toggle-menu]').on('click keydown', function(event) {
+    if (event.type !== 'click' && event.which !== 32 && event.which !== 13) {
+      return;
+    }
+    
+    $('body').addClass('has-push-menu');
+    $('html').addClass('has-push-menu');
+
+    if (event.type === 'keydown') {
+      $('body').find('.fl-menu').toggleClass('active');
+      $('.fl-viewport-header .hamburger').toggleClass('is-active');
+    }
   });
 }

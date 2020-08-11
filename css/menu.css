@@ -154,6 +154,15 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   text-indent: -9999px;
   width: 0;
 }
+
+.fl-with-top-menu.has-push-menu .fl-menu-panel {
+  display: block;
+}
+
+.fl-with-top-menu .fl-menu-panel {
+  display: none;
+}
+
 @media screen and (min-width: 400px) {
   .fl-viewport-header-left .nav-left + .nav-right + .nav-title,
   .fl-viewport-header-left .nav-title {

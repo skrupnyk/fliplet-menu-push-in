@@ -1,42 +1,42 @@
 <!-- HEADER -->
 <div class="fl-viewport-header {{#if location}}fl-viewport-header-left{{/if}}">
   {{#if location}} {{#if canGoBack}}
-  <span class="nav-left fl-menu-back" data-fl-navigate-back>
-        <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
+  <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back tabindex="0">
+    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
   </span>
   {{/if}} {{#if pages}}
-  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="1">
-        <div class="hamburger hamburger--slider">
-          <span class="hamburger-box">
-            <span class="hamburger-inner">
-              <span class="hamburger-inner-1"></span>
-              <span class="hamburger-inner-2"></span>
-            </span>
-          </span>
-        </div>
-      </span> {{/if}}
+  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="0">
+    <div class="hamburger hamburger--slider">
+      <span class="hamburger-box">
+        <span class="hamburger-inner">
+          <span class="hamburger-inner-1"></span>
+          <span class="hamburger-inner-2"></span>
+        </span>
+      </span>
+    </div>
+  </span> {{/if}}
   <span class="nav-title">
-      <span>{{title}}</span>
+    <span>{{title}}</span>
   </span>
   {{else}} {{#if canGoBack}}
-  <span class="nav-left fl-menu-back" data-fl-navigate-back>
-        <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
+  <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back  tabindex="0">
+    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
   </span>
   {{/if}}
   <span class="nav-title">
-      <span>{{title}}</span>
+    <span>{{title}}</span>
   </span>
   {{#if pages}}
-  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="1">
-        <div class="hamburger hamburger--slider">
-          <span class="hamburger-box">
-            <span class="hamburger-inner">
-              <span class="hamburger-inner-1"></span>
-              <span class="hamburger-inner-2"></span>
-            </span>
-          </span>
-        </div>
-      </span> {{/if}} {{/if}}
+  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="0">
+    <div class="hamburger hamburger--slider">
+      <span class="hamburger-box">
+        <span class="hamburger-inner">
+          <span class="hamburger-inner-1"></span>
+          <span class="hamburger-inner-2"></span>
+        </span>
+      </span>
+    </div>
+  </span> {{/if}} {{/if}}
 </div>
 <!-- END OF HEADER -->
 
@@ -45,7 +45,7 @@
   <div class="fl-menu-overlay"></div>
   <div class="fl-menu-panel">
     <div class="fl-menu-header">
-      <div class="fl-close-menu focus-outline" tabindex="1">
+      <div class="fl-close-menu focus-outline" tabindex="0">
         <div class="hamburger hamburger--slider is-active">
           <span class="hamburger-box">
             <span class="hamburger-inner">
@@ -68,7 +68,8 @@
       <div class="fl-list-default">
         <ul class="main-menu">
           {{#each pages as |page pageIndex|}}
-          <li class="linked {{#if page.icon}}with-icon{{/if}} focus-outline" data-fl-navigate='{{{page.action}}}' data-page-id="{{page.pageId}}" tabindex="1">
+          <li class="linked {{#if page.icon}}with-icon{{/if}} focus-outline" data-fl-navigate='{{{page.action}}}'
+            data-page-id="{{page.pageId}}" tabindex="0">
             {{#if page.icon}}
             <div class="fl-menu-icon">
               <i class="{{page.icon}} fa-fw"></i>

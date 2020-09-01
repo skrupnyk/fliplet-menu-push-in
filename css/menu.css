@@ -148,11 +148,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 }
 
 .fl-viewport-header .nav-left .btn-label {
-  display: inline-block;
-  padding-left: 22px;
-  padding-right: 22px;
-  text-indent: -9999px;
-  width: 0;
+  display: none;
 }
 
 .fl-with-top-menu.has-push-menu .fl-menu-panel {
@@ -178,9 +174,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   }
 
   .fl-viewport-header .nav-left .btn-label {
-    padding: 0;
-    text-indent: initial;
-    width: auto;
+    display: inline-block;
     position: relative;
     left: -15px;
     top: -4px;

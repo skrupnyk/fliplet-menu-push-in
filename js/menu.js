@@ -64,7 +64,7 @@ function init() {
     $('html').removeClass('has-push-menu');
   });
 
-  $('.fl-menu .fl-close-menu').on('click keydown', function() {
+  $('.fl-menu .fl-close-menu').on('click keydown', function(event) {
     if (event.type !== 'click' && event.which !== 32 && event.which !== 13) {
       return;
     }

@@ -75,6 +75,7 @@ function init() {
 
     if (event.type === 'keydown') {
       $('.fl-viewport-header .hamburger').toggleClass('is-active');
+      $menuElement.find('[data-fl-toggle-menu]').focus();
     }
   });
 
@@ -88,13 +89,16 @@ function init() {
     if (event.type !== 'click' && event.which !== 32 && event.which !== 13) {
       return;
     }
+
+    var $body = $('body');
     
-    $('body').addClass('has-push-menu');
+    $body.addClass('has-push-menu');
     $('html').addClass('has-push-menu');
 
     if (event.type === 'keydown') {
-      $('body').find('.fl-menu').toggleClass('active');
+      $body.find('.fl-menu').toggleClass('active');
       $('.fl-viewport-header .hamburger').toggleClass('is-active');
+      $menuElement.find('.fl-menu .fl-close-menu').focus();
     }
   });
 }

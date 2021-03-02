@@ -263,7 +263,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   pointer-events: all;
 }
 
-.fl-menu .fl-menu-foot,
 .fl-menu .fl-menu-header {
   order: 3;
   position: absolute;

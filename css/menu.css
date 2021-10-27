@@ -256,6 +256,10 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   box-shadow: 4px 0 5px rgba(0,0,0,0.2);
 }
 
+.fl-menu-push-in-left >>> .fl-close-menu {
+  left: 15px;
+}
+
 .fl-menu.active .fl-menu-panel {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

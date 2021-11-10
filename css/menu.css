@@ -256,7 +256,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   box-shadow: 4px 0 5px rgba(0,0,0,0.2);
 }
 
-.fl-menu-push-in-left .fl-close-menu.focus-outline {
+.fl-menu-push-in-left .fl-close-menu {
   left: 15px;
 }
 

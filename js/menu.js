@@ -30,7 +30,7 @@ function init() {
     return Promise.reject();
   });
 
-  console.log($menuElement);
+  console.log($menuElement.find('ul'));
   debugger;
 
   if ($('li.with-icon').length) {

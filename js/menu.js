@@ -10,7 +10,6 @@ function init() {
   var lastScrollTop = 0;
 
   Fliplet.Hooks.on('addExitAppMenuLink', function () {
-    debugger;
     var $exitButton = $([
       '<li class="linked with-icon" data-fl-exit-app>',
         '<div class="fl-menu-icon">',
@@ -30,8 +29,6 @@ function init() {
     // Prevent default "Exit" link from being added
     return Promise.reject();
   });
-
-  console.log($exitButton);
 
   if ($('li.with-icon').length) {
     $('.main-menu').addClass('with-icons');

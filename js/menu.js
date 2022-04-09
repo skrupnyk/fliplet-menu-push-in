@@ -26,7 +26,7 @@ function init() {
 
     $menuElement.find('ul').append($exitButton);
 
-    debugger;
+    console.log($menuElement);
 
     // Prevent default "Exit" link from being added
     return Promise.reject();

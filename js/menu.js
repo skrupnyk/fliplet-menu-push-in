@@ -26,11 +26,12 @@ function init() {
 
     $menuElement.find('ul').append($exitButton);
 
-    console.log($menuElement);
-
     // Prevent default "Exit" link from being added
     return Promise.reject();
   });
+
+  console.log($menuElement);
+  debugger;
 
   if ($('li.with-icon').length) {
     $('.main-menu').addClass('with-icons');

@@ -31,7 +31,7 @@ function init() {
     return Promise.reject();
   });
 
-  console.log($menuElement.find('ul'));
+  console.log($exitButton);
 
   if ($('li.with-icon').length) {
     $('.main-menu').addClass('with-icons');

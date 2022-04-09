@@ -83,6 +83,7 @@ function init() {
   });
 
   $('[open-about-overlay]').on('click', function() {
+    console.log('hi');
     Fliplet.Navigate.to({
       action: 'about-overlay'
     });

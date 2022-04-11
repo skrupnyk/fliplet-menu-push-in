@@ -319,14 +319,13 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   bottom: 30px;
 }
 
-.fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
+/* .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
   bottom: 21px;
   bottom: calc(constant(safe-area-inset-bottom) + 21px);
   bottom: calc(env(safe-area-inset-bottom) + 21px);
-}
+} */
 
 .fl-menu .fl-menu-foot {
-  padding-top: 100px;
   order: 3;
   position: absolute;
   right: 0;

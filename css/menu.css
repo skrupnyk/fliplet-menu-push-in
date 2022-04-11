@@ -326,6 +326,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 }
 
 .fl-menu .fl-menu-foot {
+  padding-top: 100px;
   order: 3;
   position: absolute;
   right: 0;

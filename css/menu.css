@@ -335,9 +335,8 @@ li:last-child {
 
 .fl-menu .fl-menu-foot {
   order: 3;
-  position: absolute;
   right: 0;
-  bottom: 30px;
+  bottom: 25px;
   left: 0;
   z-index: 1;
 }

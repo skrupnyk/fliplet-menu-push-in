@@ -326,7 +326,6 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
 }
 
 li:last-child {
-  bottom: 300px;
   background-color: rgb(255, 72, 0);
 }
 

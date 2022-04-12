@@ -317,6 +317,9 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.main-menu {
   padding-bottom: 40px;
 }
 

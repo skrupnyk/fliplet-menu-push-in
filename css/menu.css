@@ -316,13 +316,21 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 25px;
+  bottom: 60px;
 }
 
 .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
   bottom: 21px;
   bottom: calc(constant(safe-area-inset-bottom) + 21px);
   bottom: calc(env(safe-area-inset-bottom) + 21px);
+}
+
+.fl-menu .fl-menu-foot {
+  order: 3;
+  right: 0;
+  bottom: 25px;
+  left: 0;
+  z-index: 1;
 }
 
 .fl-menu.fl-app-menu .fl-menu-header ~ .fl-menu-body {

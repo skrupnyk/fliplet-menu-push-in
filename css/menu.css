@@ -316,11 +316,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-}
-
-.main-menu {
-  padding-bottom: 40px;
+  bottom: 60px;
 }
 
 .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
@@ -352,7 +348,7 @@ li:last-child {
 }
 
 .fl-list-default ul {
-  padding: 0 15px 60px;
+  padding: 0 15px;
   margin: 0;
   font-size: 13px;
 }

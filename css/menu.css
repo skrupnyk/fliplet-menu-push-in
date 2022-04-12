@@ -353,7 +353,7 @@ li:last-child {
 }
 
 .fl-list-default ul {
-  padding: 0 15px;
+  padding: 0 15px 40px;
   margin: 0;
   font-size: 13px;
 }

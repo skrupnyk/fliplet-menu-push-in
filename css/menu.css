@@ -335,7 +335,7 @@ li:last-child {
 
 .fl-menu .fl-menu-foot {
   order: 3;
-  /* position: absolute; */
+  position: absolute;
   right: 0;
   bottom: 30px;
   left: 0;
@@ -353,7 +353,7 @@ li:last-child {
 }
 
 .fl-list-default ul {
-  padding: 0 15px 40px;
+  padding: 0 15px 50px;
   margin: 0;
   font-size: 13px;
 }

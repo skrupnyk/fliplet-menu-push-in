@@ -317,6 +317,7 @@ body.has-menu-left.has-push-menu .fl-viewport-header {
   right: 0;
   left: 0;
   bottom: 60px;
+}
 
 .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
   bottom: 21px;
